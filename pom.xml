@@ -20,6 +20,5 @@
        <module>spring-redisgraph-configuration</module>
        <module>spring-redisgraph-example</module>
    </modules>
-
-
+  
 </project>
