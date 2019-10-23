@@ -2,3 +2,7 @@
 */target/*
 .idea
 lib
+.classpath
+.project
+.settings/
+**/.gitignore
