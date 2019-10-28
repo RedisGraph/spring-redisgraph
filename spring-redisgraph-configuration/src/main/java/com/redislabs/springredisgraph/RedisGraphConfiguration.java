@@ -35,8 +35,13 @@ public class RedisGraphConfiguration {
 
     @Bean(destroyMethod = "close")
     public RedisGraph redisGraphConnection() {
-        JedisPool pool = new JedisPool(new JedisPoolConfig(), host, port, Protocol.DEFAULT_TIMEOUT, password);
-        return new com.redislabs.redisgraph.impl.api.RedisGraph(pool);
+        if (null == password) {
+            return new com.redislabs.redisgraph.impl.api.RedisGraph();
+        }
+        else {
+            JedisPool pool = new JedisPool(new JedisPoolConfig(), host, port, Protocol.DEFAULT_TIMEOUT, password);
+            return new com.redislabs.redisgraph.impl.api.RedisGraph(pool);
+        }
     }
 
     private String host() {
@@ -55,7 +60,7 @@ public class RedisGraphConfiguration {
 
     private String password() {
         if (password == null) {
-            return props.getHost();
+            return props.getPassword();
         }
         return password;
     }
