@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
-version: 2
+version: 2.1
 commands:
   early_return_for_forked_pull_requests:
     description: >-
@@ -62,7 +62,7 @@ jobs:
       - run: mvn -s .circleci.settings.xml -DskipTests deploy -pl spring-redisgraph-configuration     
 
 workflows:
-  version: 2
+  version: 2.1
   commit:
     jobs:
       - build
