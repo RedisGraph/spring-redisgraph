@@ -22,7 +22,7 @@ jobs:
       - image: circleci/openjdk:8u171-jdk
 
       - image: redislabs/redisgraph:edge
-        port: 6379:6379
+        #port: 6379:6379
 
     working_directory: ~/repo
 
@@ -62,7 +62,7 @@ jobs:
       - run: mvn -s .circleci.settings.xml -DskipTests deploy -pl spring-redisgraph-configuration     
 
 workflows:
-  version: 2.1
+  version: 2
   commit:
     jobs:
       - build
