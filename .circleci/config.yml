@@ -3,7 +3,6 @@
 # Check https://circleci.com/docs/2.0/language-java/ for more details
 #
 version: 2
-
 commands:
   early_return_for_forked_pull_requests:
     description: >-
@@ -17,7 +16,6 @@ commands:
               echo "Nothing to do for forked PRs, so marking this step successful"
               circleci step halt
             fi
-
 jobs:
   build:
     docker:
