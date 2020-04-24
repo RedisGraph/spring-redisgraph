@@ -5,10 +5,10 @@
 [![Javadocs](https://www.javadoc.io/badge/com.redislabs/spring-redisgraph.svg)](https://www.javadoc.io/doc/com.redislabs/spring-redisgraph)
 [![Codecov](https://codecov.io/gh/RedisGraph/spring-redisgraph/branch/master/graph/badge.svg)](https://codecov.io/gh/RedisGraph/spring-redisgraph)
 
-[![Mailing List](https://img.shields.io/badge/Mailing%20List-RedisGraph-blue)](https://groups.google.com/forum/#!forum/redisgraph)
+# spring-redisgraph
+[![Forum](https://img.shields.io/badge/Forum-RedisGraph-blue)](https://forum.redislabs.com/c/modules/redisgraph)
 [![Gitter](https://badges.gitter.im/RedisLabs/RedisGraph.svg)](https://gitter.im/RedisLabs/RedisGraph?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-# spring-redisgraph
 Spring framework support for RedisGraph
 
 see spring-redisgraph-example project for usage and testing.
