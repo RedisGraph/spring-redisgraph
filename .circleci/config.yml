@@ -59,13 +59,15 @@ jobs:
 
       - early_return_for_forked_pull_requests
 
-      - run: mvn -s .circleci.settings.xml -DskipTests deploy -pl spring-redisgraph-configuration     
+      - run: mvn -s .circleci.settings.xml -DskipTests deploy -pl spring-redisgraph-configuration
 
 workflows:
   version: 2
   commit:
     jobs:
-      - build
+      - build:
+          context:
+            - common
   nightly:
     triggers:
       - schedule:
